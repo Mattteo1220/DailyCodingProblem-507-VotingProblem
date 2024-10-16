@@ -1,2 +1,2 @@
-# DailyCodingProblem-507-VotingProblem
-Simple console app to stream in contents from a file containing voter information pertaining to the voter and the candidates for which they voted. 
+# DailyCodingProblems
+Daily coding problems to help improve my technical ability and display this experience for others to view. 
