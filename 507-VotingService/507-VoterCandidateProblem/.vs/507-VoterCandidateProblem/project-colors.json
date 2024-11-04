@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "59abc181-d781-450a-b204-957bc8dd4a72": {
+      "ProjectGuid": "59abc181-d781-450a-b204-957bc8dd4a72",
+      "DisplayName": "507-VoterCandidateProblem",
+      "ColorIndex": 0
+    },
+    "a7a35bd4-de38-4b83-897b-8cee46e269b4": {
+      "ProjectGuid": "a7a35bd4-de38-4b83-897b-8cee46e269b4",
+      "DisplayName": "Voting.Domain",
+      "ColorIndex": 1
+    },
+    "21fdb8e6-3bc4-40bb-8f9d-69128f3610c0": {
+      "ProjectGuid": "21fdb8e6-3bc4-40bb-8f9d-69128f3610c0",
+      "DisplayName": "Voting.Common",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "2b1e18a6-7b8b-477f-bd40-35da876420ef": {
+      "ProjectGuid": "2b1e18a6-7b8b-477f-bd40-35da876420ef",
+      "DisplayName": "Voting.Domain",
+      "ColorIndex": 3
+    },
+    "f504a50c-9e6d-4d10-b3d7-669e774622c3": {
+      "ProjectGuid": "f504a50c-9e6d-4d10-b3d7-669e774622c3",
+      "DisplayName": "Voting.Common",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}
