@@ -12,7 +12,6 @@ namespace Voting.Domain
     {
         private IDiagnosticLogger _logger;
         private const string FileNameConst = "VoterRecord";
-        private HashSet<VoterRecord> _records;
 
         public VotingService(IDiagnosticLogger logger)
         {
@@ -27,37 +26,51 @@ namespace Voting.Domain
 
             var files = GetFiles(filePath);
 
-            _records = new HashSet<VoterRecord>(new VoterIdEqualityComparer());
+            var ballots = ProcessFiles(files);
 
-            foreach(var file in files)
-            {
-               ProcessFile(file);
-            } 
-
-            TabulateVotes();
+            TabulateVotes(ballots);
 
             _logger.Info($"{nameof(VotingService)}::{nameof(Run)} ending...");
         }
 
-        private void TabulateVotes()
+        private void TabulateVotes(IEnumerable<BallotDto> ballots)
         {
-            var candidatesByVotes = _records.GroupBy(x => x.CandidateId)
-                .OrderByDescending(x => x.Select(x => x.VoterId).Count())
+            var candidates = ballots.GroupBy(x => x.CandidateId).Select(x => new CandidateDto(x.Key, x.Count()));
+
+            var candidatesByVotes = candidates
+                .OrderByDescending(x => x.VoteTally)
                 .Take(3)
                 .ToList();
 
             foreach(var candidate in candidatesByVotes)
             {
-                var numOfCounts = candidate.Where(s => s.CandidateId == candidate.Key).Select(x => x.VoterId).Count();
-
-                _logger.Info($"{candidate.Key} has {numOfCounts} votes");
+                _logger.Info($"{candidate.CandidateId} has {candidate.VoteTally} votes");
             }
 
-            _logger.Info($"Candidate: {candidatesByVotes.First().Key} is the winner with {candidatesByVotes.First().Count()} votes");
+            _logger.Info($"Candidate: {candidatesByVotes.First().CandidateId} is the winner with {candidatesByVotes.First().VoteTally} votes");
         }
 
-        private void ProcessFile(string file)
+        private HashSet<BallotDto> ProcessFiles(List<string> files)
         {
+            var records = new HashSet<BallotDto>(new VoterIdEqualityComparer());
+            foreach (var file in files)
+            {
+                var uniqueRecords = ProcessFile(file);
+                foreach(var record in uniqueRecords)
+                {
+                    if (!records.Add(record))
+                    {
+                        _logger.Info($"FRAUD: Voter: {record.VoterId} is present across multiple files.");
+                    };
+                }
+            }
+
+            return records;
+        }
+
+        private HashSet<BallotDto> ProcessFile(string file)
+        {
+            var records = new HashSet<BallotDto>(new VoterIdEqualityComparer());
             using (var fs = File.OpenRead(file))
             {
                 using (var reader = new StreamReader(fs))
@@ -68,18 +81,19 @@ namespace Voting.Domain
                         if (recordData == null)
                         {
                             _logger.Error($"No data in file to process.");
-                            return;
+                            return new HashSet<BallotDto>();
                         }
                         var voterId = recordData.Split('|')[0];
                         var candidateId = recordData.Split('|')[1];
-                        if (!_records.Add(new VoterRecord(voterId, candidateId)))
+                        if (!records.Add(new BallotDto(voterId, candidateId)))
                         {
-                            _logger.Error($"FRAUD: {voterId} was present twice in this file. Voting more than once is legally forbidden.");
+                            _logger.Error($"FRAUD: {voterId} was present more than once in file {file}. Voting more than once is legally forbidden.");
                             //potentially add to a db for fraud team to investigate
                         }
                     }
                 }
             }
+            return records;
         }
 
         private List<string> GetFiles(string filePath)

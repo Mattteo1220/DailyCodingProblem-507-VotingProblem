@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Voting.Domain
 {
-    public class VoterIdEqualityComparer : IEqualityComparer<VoterRecord>
+    public class VoterIdEqualityComparer : IEqualityComparer<BallotDto>
     {
-        public bool Equals(VoterRecord x, VoterRecord y)
+        public bool Equals(BallotDto x, BallotDto y)
         {
             if (ReferenceEquals(x, y))
             {
@@ -26,7 +26,7 @@ namespace Voting.Domain
             return false;
         }
 
-        public int GetHashCode(VoterRecord obj)
+        public int GetHashCode(BallotDto obj)
         {
             if (obj == null)
             {

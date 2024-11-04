@@ -56,3 +56,5 @@
 {"Timestamp":"2024-11-03T07:13:59.1793770-07:00","Level":"Error","MessageTemplate":"FRAUD: 8928283 was present twice in this file. Voting more than once is legally forbidden."}
 {"Timestamp":"2024-11-03T07:13:59.1813523-07:00","Level":"Error","MessageTemplate":"FRAUD: 8273737 was present twice in this file. Voting more than once is legally forbidden."}
 {"Timestamp":"2024-11-03T07:13:59.1839427-07:00","Level":"Error","MessageTemplate":"FRAUD: 8273737 was present twice in this file. Voting more than once is legally forbidden."}
+{"Timestamp":"2024-11-04T06:20:13.2182190-07:00","Level":"Error","MessageTemplate":"FRAUD: 8273737 was present more than once in file c:/src/projects/DailyCodingProblems/507/VoterRecords.txt. Voting more than once is legally forbidden."}
+{"Timestamp":"2024-11-04T06:22:18.8509156-07:00","Level":"Error","MessageTemplate":"FRAUD: 8273737 was present more than once in file c:/src/projects/DailyCodingProblems/507/VoterRecords.txt. Voting more than once is legally forbidden."}

@@ -6,17 +6,14 @@ using System.Threading.Tasks;
 
 namespace Voting.Domain
 {
-    public class Candidate
+    public record BallotDto
     {
-        public Candidate(string candidateId)
+        public BallotDto(string voterId, string candidateId)
         {
+            VoterId = voterId;
             CandidateId = candidateId;
         }
+        public string VoterId { get; private set; } 
         public string CandidateId { get; private set; }
-        public int VoteTally { get; private set; }
-
-        public void AddVote() => VoteTally++;
-
-
     }
 }
