@@ -1,0 +1,12 @@
+C:\src\projects\DailyCodingProblems\518-arraySum\ArraySumService\bin\Debug\net6.0\ArraySum.Domain.deps.json
+C:\src\projects\DailyCodingProblems\518-arraySum\ArraySumService\bin\Debug\net6.0\ArraySum.Domain.dll
+C:\src\projects\DailyCodingProblems\518-arraySum\ArraySumService\bin\Debug\net6.0\ref\ArraySum.Domain.dll
+C:\src\projects\DailyCodingProblems\518-arraySum\ArraySumService\bin\Debug\net6.0\ArraySum.Domain.pdb
+C:\src\projects\DailyCodingProblems\518-arraySum\ArraySumService\obj\Debug\net6.0\ArraySum.Domain.csproj.AssemblyReference.cache
+C:\src\projects\DailyCodingProblems\518-arraySum\ArraySumService\obj\Debug\net6.0\ArraySum.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\src\projects\DailyCodingProblems\518-arraySum\ArraySumService\obj\Debug\net6.0\ArraySum.Domain.AssemblyInfoInputs.cache
+C:\src\projects\DailyCodingProblems\518-arraySum\ArraySumService\obj\Debug\net6.0\ArraySum.Domain.AssemblyInfo.cs
+C:\src\projects\DailyCodingProblems\518-arraySum\ArraySumService\obj\Debug\net6.0\ArraySum.Domain.csproj.CoreCompileInputs.cache
+C:\src\projects\DailyCodingProblems\518-arraySum\ArraySumService\obj\Debug\net6.0\ArraySum.Domain.dll
+C:\src\projects\DailyCodingProblems\518-arraySum\ArraySumService\obj\Debug\net6.0\ref\ArraySum.Domain.dll
+C:\src\projects\DailyCodingProblems\518-arraySum\ArraySumService\obj\Debug\net6.0\ArraySum.Domain.pdb
