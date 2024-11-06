@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gNEaHoFENRnabwkfu4ExxlsFBfseY2JBrK+FIAdle9xTkH80EFAwa5/uB3Lo80g8hiqKbc5IXLj5PVzLC33SuA==",
+  "dgSpecHash": "Iv1y8aYqK9lkgCePTPcgde1FQ/98dQuFSyEvHb5xDUpK88u0nJvOPIDjh0/c2tqy+HFvtHKuFNU4J0/X0zT2/A==",
   "success": true,
-  "projectFilePath": "C:\\src\\projects\\DailyCodingProblems\\507\\Voting.Common\\Voting.Common.csproj",
+  "projectFilePath": "C:\\src\\projects\\DailyCodingProblems\\507-VotingService\\Voting.Common\\Voting.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Msmce\\.nuget\\packages\\serilog\\4.0.2\\serilog.4.0.2.nupkg.sha512",
     "C:\\Users\\Msmce\\.nuget\\packages\\serilog.sinks.console\\6.0.0\\serilog.sinks.console.6.0.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KUtMSP5kM8j/Yo9hUbOcZkoYH3W5fr9mNDTR/IeqRsSQvSWZnj+vcNonU/9oAK+V6ru5JLEaE40gT3PAfgGlEQ==",
+  "dgSpecHash": "x0OR1qSGx/rNXm8cAwkBaDbsKWaCUF1D2HMmWo5RHGvPFxsy5LSGYuV42c3UUVLwdTjo2fwUJqmxrkGlIeEFQA==",
   "success": true,
-  "projectFilePath": "C:\\src\\projects\\DailyCodingProblems\\507\\507-VoterCandidateProblem\\507-VoterCandidateProblem.csproj",
+  "projectFilePath": "C:\\src\\projects\\DailyCodingProblems\\507-VotingService\\507-VoterCandidateProblem\\507-VoterCandidateProblem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Msmce\\.nuget\\packages\\genericparsing\\1.5.0\\genericparsing.1.5.0.nupkg.sha512",
     "C:\\Users\\Msmce\\.nuget\\packages\\serilog\\4.0.2\\serilog.4.0.2.nupkg.sha512",
