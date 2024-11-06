@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+vvGb61aMbZXtcMLXtr410nVICh+TN5pJ6ZZGMN6qh6HBBa59n3OZYciFj6W9OWk3u8z98B6FtxBvR5NXe/xFg==",
+  "dgSpecHash": "oLFA6doTiK6BeN7C1bp6BdyWqkBo3wkmQjJ7NDJbRtpJegPRY7dujOAnRs52PLa2uGr1AoneH7ugD7rK8pFFRQ==",
   "success": true,
-  "projectFilePath": "C:\\src\\projects\\DailyCodingProblems\\507\\Voting.Domain\\Voting.Domain.csproj",
+  "projectFilePath": "C:\\src\\projects\\DailyCodingProblems\\507-VotingService\\Voting.Domain\\Voting.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Msmce\\.nuget\\packages\\genericparsing\\1.5.0\\genericparsing.1.5.0.nupkg.sha512",
     "C:\\Users\\Msmce\\.nuget\\packages\\serilog\\4.0.2\\serilog.4.0.2.nupkg.sha512",

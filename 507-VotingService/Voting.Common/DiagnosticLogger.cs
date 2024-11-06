@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Voting.Common
 {
-    public class DiagnosticLogger: IDiagnosticLogger
+    public class DiagnosticLogger : IDiagnosticLogger
     {
         private readonly Serilog.Core.Logger SerilogLogger;
         public DiagnosticLogger()
@@ -31,7 +31,7 @@ namespace Voting.Common
             SerilogLogger.Fatal(message);
         }
 
-        public void Info(string message)
+        public void Info( string message)
         {
             SerilogLogger.Information(message);
         }

@@ -1,0 +1,7 @@
+2024-11-05 21:06:17.318 -07:00 [INF] VotingService::Run starting...
+2024-11-05 21:06:17.387 -07:00 [ERR] FRAUD: 8273737 was present more than once in file c:/src/projects/DailyCodingProblems/507-VotingService/VoterRecords.txt. Voting more than once is legally forbidden.
+2024-11-05 21:06:17.397 -07:00 [INF] A has 5 votes
+2024-11-05 21:06:17.397 -07:00 [INF] B has 2 votes
+2024-11-05 21:06:17.398 -07:00 [INF] D has 2 votes
+2024-11-05 21:06:17.399 -07:00 [INF] Candidate: A is the winner with 5 votes
+2024-11-05 21:06:17.400 -07:00 [INF] VotingService::Run ending...
